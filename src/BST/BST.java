@@ -19,8 +19,10 @@ public class BST {
         if (lo > hi)
             return null;
 
+        //mid
         int mid = (lo + hi) / 2;
 
+        //Create a node
         Node nn = new Node();
         nn.data = in[mid];
 
@@ -43,6 +45,7 @@ public class BST {
         if (node == null)
             return;
 
+        //Self work
         String str = "";
 
         if (node.left == null)
@@ -68,6 +71,7 @@ public class BST {
         return max(root);
     }
 
+    // Overloading
     private int max(Node node) {
 
         if (node.right == null) {
@@ -95,7 +99,7 @@ public class BST {
         else if (node.data > item)
             return find(node.left, item);
 
-            // equal
+            // equal to data itself
         else
             return true;
     }
