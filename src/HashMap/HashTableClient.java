@@ -5,10 +5,10 @@ public class HashTableClient {
     public static void main(String[] args) throws Exception {
         // TODO Auto-generated method stub
         HashTable<String, Integer> map = new HashTable<>(4);
-        map.put("USA", 200);
-        map.put("UK", 175);
-        map.put("India", 300);
-        map.put("India", 325);
+        map.put("Amsterdam", 200);
+        map.put("Royal Albert Hall", 175);
+        map.put("Indira Gandhi Arena", 300);
+        map.put("The Dome at America's Center", 350);
 
         // map.display();
 

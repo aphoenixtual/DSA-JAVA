@@ -31,6 +31,7 @@ public class HashTable<K, V> {
     }
 
     public HashTable(int capacity) {
+        //type cast
         this.bucketArray = (LinkedList<HTPair>[]) new LinkedList[capacity];
         this.size = 0;
     }
